@@ -1,0 +1,15 @@
+@import "bootstrap/scss/bootstrap";
+
+#editor {
+  max-height: 80vh;
+}
+
+#left-bottom-section{
+  border-right: 1px solid black;
+}
+
+.multiline {
+  white-space: pre-wrap;
+}
+
+
