@@ -1,5 +1,5 @@
 {
-  "name": "resume-builder",
+  "name": "cv-maker",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -29,6 +29,7 @@
   "dependencies": {
     "@react-pdf/renderer": "^4.1.4",
     "bootstrap": "^5.3.3",
+    "html2pdf.js": "^0.10.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   }
