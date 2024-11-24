@@ -3,9 +3,6 @@ import React from "react";
 export default function Preview (props) {
   
   return (<div className="col-md-7">
-      <div className="text-center mb-4">
-        <button className="btn btn-success btn-lg" onClick={props.state.downloadHtml2Pdf}>Save</button>
-      </div>  
     <div className="container-fluid p-3 border border-1 preview" id={props.id}>
       <div className="row">
         {props.state.headshot && <div className="col-3">
@@ -77,5 +74,8 @@ export default function Preview (props) {
         </div>
       </div>
     </div>
+    <div className="text-center my-5">
+      <button className="btn btn-primary btn-lg" onClick={props.state.downloadHtml2Pdf}>Save</button>
+    </div>  
   </div>)
 }
