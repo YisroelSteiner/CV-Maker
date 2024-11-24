@@ -71,7 +71,7 @@ devServer: {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: "CV Maker - Beta",
+      title: "CV Maker",
       filename: "index.html",
       template: "./src/template.html"
     })
