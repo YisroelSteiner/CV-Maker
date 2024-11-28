@@ -11,14 +11,17 @@ export default function Preview (props) {
           <h5 className="display-5 fw-bold">{props.state.name}</h5>
           <h6 className="display-6">{props.state.specialty}</h6>
           <p>{props.state.contacts.map((c, i) => {
-            const filtered = props.state.contacts.filter(c => c.length > 0);
+            const filtered = props.state.contacts.filter(c => {
+              if (typeof c === "string") return c.length > 0;
+              else return c[0].length > 0;
+            });
             if (typeof c === "string") {
             if (c && filtered.indexOf(c) < filtered.length - 1) 
             return (<span key={i}> {c} |</span>); else 
             return (<span key={i}> {c} </span>);} else {
-              if (c.textContent && filtered.indexOf(c) < filtered.length - 1) 
-                return (<span key={i}> {c.html} |</span>); else 
-                return (<span key={i}> {c.html} </span>);}
+              if (c[0] && filtered.indexOf(c) < filtered.length - 1) 
+                return (<span key={i}> {c[1]} |</span>); else 
+                return (<span key={i}> {c[1]} </span>);}
            })}</p>
         </div>
       </div>

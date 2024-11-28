@@ -12,7 +12,7 @@ export default function App () {
     const [phoneNumber, setPhoneNumber] = useState("");
     const [website, setWebsite] = useState("");
     const [location, setLocation] = useState("");
-    const contacts = [email, phoneNumber, {textContent: website, html: (<a className="text-decoration-none text-dark" target="_blank" href={website}>{website}</a>)}, location];
+    const contacts = [email, phoneNumber, [website, (<a className="text-decoration-none text-dark" target="_blank" href={website}>{website}</a>)], location];
     
     // bio
     const [bio, setBio] = useState("");
