@@ -12,9 +12,13 @@ export default function Preview (props) {
           <h6 className="display-6">{props.state.specialty}</h6>
           <p>{props.state.contacts.map((c, i) => {
             const filtered = props.state.contacts.filter(c => c.length > 0);
-            if (filtered.indexOf(c) < filtered.length - 1) 
-            return (<span key={i}> {c}|</span>); else 
-            return (<span key={i}> {c} </span>);
+            if (typeof c === "string") {
+            if (c && filtered.indexOf(c) < filtered.length - 1) 
+            return (<span key={i}> {c} |</span>); else 
+            return (<span key={i}> {c} </span>);} else {
+              if (c.textContent && filtered.indexOf(c) < filtered.length - 1) 
+                return (<span key={i}> {c.html} |</span>); else 
+                return (<span key={i}> {c.html} </span>);}
            })}</p>
         </div>
       </div>
