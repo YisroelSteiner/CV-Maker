@@ -71,7 +71,7 @@ devServer: {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: "CV Maker",
+      title: "Steiner's Free Express CV Maker",
       filename: "index.html",
       template: "./src/template.html"
     })

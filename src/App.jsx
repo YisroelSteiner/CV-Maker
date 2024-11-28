@@ -1,11 +1,5 @@
 import React, {useState} from "react";
-// import { PDFViewer, Page, Text, View, Document, StyleSheet  } from "@react-pdf/renderer";
 import Preview from "./Preview.jsx";
-// import languages from "./lists/languages.json";
-// import languageLevels from "./lists/languageLevels.json";
-// import pdfMake from 'pdfmake/build/pdfmake';
-// import pdfFonts from 'pdfmake/build/vfs_fonts';
-// pdfMake.addVirtualFileSystem(pdfFonts);
 
 export default function App () {
     // hero section data
@@ -142,7 +136,7 @@ export default function App () {
 
     return (
         <div className="container-xxl p-1">
-            <h1>CV Maker</h1>
+            <h1>Free CV Maker</h1>
             <p className="lead fst-italic mb-3">Write your CV from scratch in 5 minutes!</p>
             <p className="mb-4">Enter your data on the left, see your CV template dynamically changing. Click "Save" once you're done to download your resume in PDF!</p>
             <div className="row">
