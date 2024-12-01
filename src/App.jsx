@@ -297,15 +297,6 @@ export default function App () {
                   </figure>
                 </div>
                 <Preview state={previewState} id="dynamicPreview"/>
-                {/* <div id="pdf">
-                  <PDFViewer>
-                    <Document>
-                      <Page size="A4">
-                        <Preview state={previewState} id="pdfPreview" />
-                      </Page>
-                    </Document>    
-                  </PDFViewer>
-                </div> */}
             </div>
             <footer className="text-center mt-3"><p>©2024 by Yisroel Steiner</p></footer>
         </div>
