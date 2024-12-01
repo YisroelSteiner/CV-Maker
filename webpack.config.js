@@ -60,12 +60,6 @@ devServer: {
             loader: 'sass-loader'
           }
         ]
-      },
-      ,
-      {
-        test: /\.(png|jpg|jpeg)$/,
-        exclude: /node_modules/,
-        use: ["file-loader"]
       }
     ]
   },
